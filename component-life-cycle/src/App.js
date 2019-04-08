@@ -46,7 +46,37 @@ class Body extends Component {
   }
 }
 
+
+
 class Numbers extends Component {
+  componentWillMount(){
+    console.log("componentWillMount called here")
+  }
+  componentDidlMount(){
+    console.log("componentDidlMount called here")
+  }
+
+  componentWillReceiveProps(newProps){
+    console.log("componentWillReceiveProps called")
+  }
+
+  shouldComponentUpdate(newProps, nextState){
+    console.log('Called should component update');
+    return true;
+  }
+
+  componentWillUpdate(newProps, nextState){
+    console.log('Called component will update');
+  }
+
+  componentDidUpdate(newProps, nextState){
+    console.log ('Called component did update');
+  }
+
+  componentWillUnmount(){
+    console.log('Called Component Will Unmount');
+  }
+
   render(){
     return(
       <div>
