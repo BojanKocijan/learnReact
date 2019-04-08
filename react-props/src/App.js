@@ -27,6 +27,12 @@ class App extends Component {
 }
 
 
+App.propTypes = {
+  propObject: React.PropTypes.object,
+  propString: React.PropTypes.string,
+  propNumbers: React.PropTypes.number,
+}
+
 class Parent extends Component {
   render(){
     return(
@@ -37,6 +43,8 @@ class Parent extends Component {
     );
   }
 }
+
+
 
 Parent.defaultProps = {
   cars: ['Audi', 'BMW', 'Zastava']
