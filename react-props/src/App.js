@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 
@@ -29,7 +28,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-  propObject: PropTypes.object,
+  propObject: React.PropTypes.object,
   propString: PropTypes.string,
   propNumber: PropTypes.number
 }
@@ -43,6 +42,8 @@ App.defaultProps = {
     obj3: "I am obj 3"
   }
 }
+
+
 
 class Parent extends Component {
 constructor(props){
