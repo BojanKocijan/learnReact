@@ -1,23 +1,22 @@
 import React from 'react';
 import './App.css';
-import Timmer from './Timmer';
+import Timer from './Timer';
 
 function App() {
   return (
     <div className="App">
     <header className="App-header">
-      <Timmer />
+      <Timer start={Date.now()} />
       <p>
-        Edit <code>src/App.js</code> and save to reload.
+        View the <code>src/App.js</code>.
       </p>
-      <a
-        className="App-link"
+      <button
         href="https://reactjs.org"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Learn React
-      </a>
+        View it on a GitHub
+      </button>
 
 
     </header>
