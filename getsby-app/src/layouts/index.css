@@ -1,3 +1,4 @@
+/*     body     */
 body{
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,9 +6,60 @@ body{
   line-height: 1.3;
   margin: 0;
 }
-
+/*     links     */
 a{
   color: rgb(42, 66, 145);
   text-decoration: none;
   font-weight: 400;
+}
+
+/*     header     */
+.Hero {
+  height: 720px;
+  background: url('../images/backgroundHeader.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroGroup {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.Hero h1{
+  margin: 0;
+  color: aliceblue;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.Hero p{
+  font-size: 24px;
+  line-height: 1.5;
+  color: beige;
+}
+
+.Hero a{
+  font-size: 16px;
+  font-weight: 600;
+  color: whitesmoke;
+  text-transform: capitalize;
+  background: paleturquoise;
+  padding: 8px 16px;
+  border: 1px solid rgba(255,255,255, 0.25);
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .HeroGroup{
+    padding: 100px 20px;
+  }
+  .Hero h1{
+    font-size: 32px;
+  }
+  .Hero p {
+    font-size: 12px;
+  }
 }
