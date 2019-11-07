@@ -30,7 +30,17 @@ a{
   max-width: 800px;
   margin: 0 auto;
   padding: 150px 50px;
-  text-align: left;
+  text-align: center;
+}
+
+.HeroGroup #jelena{
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  background: url('../images/profileImg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 999px;
 }
 
 .Hero h1{
